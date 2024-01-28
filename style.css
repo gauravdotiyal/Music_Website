@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "Balsamiq Sans", sans-serif; */
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+html,
+body{
+    font-weight: 300;
+    line-height: 1.4;
+}
+.container{
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: var(--purple500);
+    color: white;  
+    height: 70px;
+    width: 100%;
+    padding: 0 5vw;
+    position: sticky;
+}
+.navpart2{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+.nav h2{
+   font-size: 3vw;
+   font-weight: bold;
+}
+@media (max-width:600px){
+    .nav{
+        height: 50px;
+    }
+    .nav h2{
+        font-size: 5.3vw;
+    }
+    .navpart2{
+        font-size: 2.5vw;
+    }
+}
+.overview{
+    width: 100%; 
+    height: 90vh;
+    background-image: url(/Images/hero_image.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+.overview_text {
+     width: 70vw;
+     text-align: center;  
+}
+.overview_text h2{
+    font-size: 4vw;
+    margin-bottom: 1.2vw;
+}
+.overview_text h4{
+    font-size: 1.5vw;
+    margin-bottom: 1.2vw;
+}
+.overview_text p{
+    font-size: 0.9vw;
+}
+@media (max-width:600px){
+    .overview{
+        width: 100%; 
+        height: 90vh;
+    }
+    .overview_text h2{
+        font-size: 9vw; 
+        margin-top: -40vw;
+    }
+    .overview_text h4{
+        font-size: 4vw;  
+    }
+    .overview_text p{
+        font-size: 2vw;  
+    } 
+}
+.music{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    color: wheat;
+    text-align: center ; 
+    
+}
+.musictext1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.musictext1 i{
+    margin-top: 3vh;
+    font-size: 3vw;
+}
+.musictext1 h2{
+    font-size: 3vw;
+    margin-top: 3vh;
+    margin-left: 2vh;
+}
+.musictext2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.musictext2 p{
+    font-size: 2vw;
+    width: 70%;
+    font-weight: bold;
+}
+.music button{
+    margin-top: 2vw;
+    font-size: 2vw;
+    border:2px solid black;
+}
