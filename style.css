@@ -321,24 +321,25 @@ body{
 }
 @media (max-width:600px){
     .giftcard{
-        width: 80%;
-        height: 80vh;
+        min-width: 90%;
+        height: 100vh;
         margin-top: 10vh;
         flex-wrap: wrap;
     }
     .giftcard_text{
-        width: 50%;
+        width: 80%;
         height: inherit;
+        display: block;
     }
     .giftcard img{
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 40%;
     }
     .giftcard_text h2{
-        font-size:4vh
+        font-size:3vh
     }
     .giftcard_text h3{
-        font-size:2.6vh
+        font-size:2,4vh
     }
     .giftcard_text p{
         font-size: 2vh;
@@ -348,7 +349,7 @@ body{
     .giftcard_button{
         width: 100%;
         height: 10vh;
-        margin-top: 15vh;
+        margin-top: 15vh; 
     }
     .giftcard_button button{
         font-size:  2vh;
@@ -388,23 +389,28 @@ body{
 @media (max-width:600px){
     .footer{
         width: 100%;
-        height: inherit;    
+        height: inherit;   
+    }
+    .footer_first{ 
+       flex-direction: column;
     }
     .footer_link{
-        width: 25%;
-        text-align: center;
+        width: 50%;
+        text-align: center;  
+
     }
-    .footer_link h4{
-        font-size: 1.7vh; 
+    .footer_link h4{ 
+        font-size: 1.6vh; 
     }
     .footer_link ul{
         margin:2vh;
     }
     .footer_link hr{
-        width: 18vh;
+       display: none;
     }
     .footer_link li{
-        font-size: 1.5vh;
+        font-size: 1.5vh; 
+        font-size:  1.6vh;
     }
 }
 footer{
